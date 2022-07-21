@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400;500&family=Roboto:wght@100;300;400;500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background: url('./images/background.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 40px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    background: #f5f6fa;
+    opacity: .8;
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+.title {
+    font-size: 1.5rem;
+    color: #273c75;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+label {
+    color: #2f3640;
+    font-size: 1.1rem;
+}
+input{
+    border: 1.5px solid #2f3640;
+    padding: 5px 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin: 5px 0 10px;
+    color: #273c75;
+    outline: none;
+}
+
+  
+.name {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.password {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.name div, .password div {
+    margin: 0 20px 0 0;
+}
+
+.btn {
+    border: none;
+    background: #192a56;
+    color: #fff;
+    padding: 8px 15px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    opacity: .8;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background .2s linear, transform .2s ;
+}
+.btn:hover {
+    background: #44bd32;
+}
+.btn:active {
+    transform: scale(.9);
+}
+.gender p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+
+@media (max-width: 600px) {
+    .name, .password {
+        display: block;
+    }
+
+    label {
+        color: #2f3640;
+        font-size: 15px;
+    }
+    input{
+        border: 1.5px solid #2f3640;
+        padding: 4px 8px;
+        font-size: 15px;
+        border-radius: 5px;
+        margin: 5px 0 10px;
+        color: #273c75;
+        outline: none;
+    }
+}
