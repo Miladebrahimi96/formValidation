@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign Up form</title>
+</head>
+<body>
+    <form>
+        <h1 class="title">Registration Info</h1>
+        <label for="fname">First Name</label>
+        <input required type="text" id="fname">
+        <label for="lname">Last Name</label>
+        <input required type="text" id="lname">
+        <div class="gender">
+            <span>Gender</span>
+            <label for="male">Female</label>
+            <input type="radio" name="gender" id="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" id="female">
+        </div>
+        <div class="password">
+            <label for="pass">Password</label>
+            <input required type="text" id="pass">
+            <label for="pass-rep">Reapeat Password</label>
+            <input required type="text" id="pass-rep">
+        </div>
+        <label for="company">Company</label>
+        <input required type="text" id="company">
+        <label for="email">E-mail</label>
+        <input required type="email" id="email">
+        <label for="phone">Phone Number</label>
+        <input required type="text" name="phone" id="phone">
+        <button type="submit">Register</button>
+
+    </form>
+</body>
+</html>
