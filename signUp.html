@@ -14,14 +14,17 @@
             <div>
                 <label for="fname">First Name</label>
                 <input required type="text" id="fname">
+                <p hidden class="hint name">enter a name</p>
             </div>
             <div>
                 <label for="lname">Last Name</label>
                 <input required type="text" id="lname">
+                <p hidden class="hint name">enter a name</p>
             </div>
         </div>
         <div class="gender">
             <p>Gender</p>
+            <p hidden class="hint">enter a name</p>
             <label for="male">Female</label>
             <input type="radio" name="gender" id="male">
             <label for="female">Female</label>
@@ -30,19 +33,24 @@
         <div class="password">
             <div>
                 <label for="pass">Password</label>
-                <input required type="password" id="pass">
+                <input required type="password" id="pass" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
+                <p hidden class="hint">enter a name</p>
             </div>
             <div>
                 <label for="pass-rep">Reapeat</label>
-                <input required type="password" id="pass-rep">
+                <input required type="password" id="pass-rep" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
+                <p hidden class="hint">enter a name</p>
             </div>
         </div>
         <label for="company">Company</label>
         <input required type="text" id="company">
+        <p hidden class="hint">enter a name</p>
         <label for="email">E-mail</label>
         <input required type="email" id="email">
+        <p hidden class="hint">enter a name</p>
         <label for="phone">Phone Number</label>
-        <input required type="text" name="phone" id="phone">
+        <input required type="text" name="phone" id="phone" pattern="09(1[09]|3[1-9]|2[1-9])-?[0-9]{3}-?[0-9]{4}">
+        <p hidden class="hint">enter a name</p>
         <button class="btn" type="submit">Register</button>
 
     </form>

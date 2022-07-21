@@ -48,6 +48,11 @@ input{
     outline: none;
 }
 
+.hint {
+    color: #e84118;
+    font-size: 15px;
+}
+
   
 .name {
     display: flex;
@@ -81,7 +86,7 @@ input{
 .btn:active {
     transform: scale(.9);
 }
-.gender p {
+.gender p:not(.hint) {
     font-size: 1.1rem;
     margin: 10px 0;
 }
@@ -105,4 +110,19 @@ input{
         color: #273c75;
         outline: none;
     }
+    .hint.name {
+        margin-left: 100px;
+    }
 }
+
+@media (min-width: 772px){
+    .hint.name {
+        margin-left: 100px;
+    }
+}
+@media (max-width: 427px){
+    .hint.name {
+        margin-left: 0;
+    }
+}
+
